@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Accounts/Accounts.h>
+#import <Social/Social.h>
 
-@interface SecondViewController : UIViewController
+@interface SecondViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
+@property (strong, nonatomic) IBOutlet UITableView *tweetTimeline;
+
+@property (strong, nonatomic) NSArray *sourceArray;
 
 @end
 
